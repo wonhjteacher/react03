@@ -17,7 +17,7 @@ const MovieList = () => {
                     movieList.map((movie)=>{
                         const gradeValue=movie.grade;
                         return(
-                            <li>
+                            <li key={movie.id}>
                                 <div className='imgbox'>
                                     <img src={movie.poster} alt={movie.title} />
                                     <span className={gradeColor[gradeValue]}>
